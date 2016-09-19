@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+
+<body>
+    <h1>Регистрация</h1>
+    <form action="singup.php" method="post">
+        <div>
+            <label>Имя:</label>
+        </div>
+        <div>
+            <input type="text" name="realname" pattern="[A-Za-zА-Яа-яЁё]{3}" required>-<small>не менее 3-х букв</small></div>
+        <br>
+        <div>
+            <label>Ник:</label>
+        </div>
+        <div>
+            <input type="text" name="nickname" pattern="[A-Za-zА-Яа-яЁё]{3}" required>-<small>не менее 3-х букв</small></div>
+        <br>
+        <div>
+            <label>Адрес электронной почты:</label>
+        </div>
+        <div>
+            <input type="email" name="login" required>
+        </div>
+        <br>
+        <div>
+            <label>Пароль:</label>
+        </div>
+        <div>
+            <input type="password" name="pass" required>-<small>не менее 6-х латинских букв</small></div>
+        <br>
+        <div>
+            <label>Повторите пароль:</label>
+        </div>
+        <div>
+            <input type="password" name="confpass" pattern="[A-Za-z]{6,}" required>-<small>не менее 6-х латинских букв</small></div>
+        <br>
+        <div>
+            <label>Возраст:</label>
+        </div>
+        <div>
+            <input type="number" name="age" pattern="[0-9]{,2}{0,9}">
+        </div>
+        <br>
+        <div>
+            <label>Пол:</label>
+        </div>
+        <div>
+            <input type="radio" name="sex" value="male">Мужской</div>
+        <br>
+        <div>
+            <input type="radio" name="sex" value="famale">Женский</div>
+        <br>
+        <div>
+            <label>Город:</label>
+        </div>
+        <div>
+            <input type="text" name="citi" pattern="\D [^0-9]">
+        </div>
+        <br>
+        <div>
+            <input type="submit" name="btm" value="Зарегистрироваться">
+        </div>
+        <br>
+    </form>
+</body>
+
+</html>
